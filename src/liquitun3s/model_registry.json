@@ -1,0 +1,38 @@
+{
+  "schema": "liquitun3s-model-registry-v1",
+  "models": {
+    "vl": {
+      "id": "LiquidAI/LFM3-VL-2B",
+      "kind": "vision",
+      "parameters_b": 1.92,
+      "context_tokens": 131072,
+      "expected_revision": "f83d2b0a2296aaa277f394990a9b8b949ddf9691",
+      "priority": 1,
+      "local_training": "fp16-lora",
+      "status": "bootstrap-source-pinned",
+      "notes": "Primary Cybersand lane: screenshots/images now; video inference supported upstream but video fine-tuning is not yet locally qualified."
+    },
+    "text": {
+      "id": "LiquidAI/LFM3-1.7B",
+      "kind": "text",
+      "parameters_b": 1.73,
+      "context_tokens": 262144,
+      "expected_revision": null,
+      "priority": 2,
+      "local_training": "fp16-lora",
+      "status": "resolve-and-record",
+      "notes": "Structured output, tools, domain language and high-level policy reasoning."
+    },
+    "text-base": {
+      "id": "LiquidAI/LFM3-1.7B-Base",
+      "kind": "text-base",
+      "parameters_b": 1.73,
+      "context_tokens": 262144,
+      "expected_revision": null,
+      "priority": 3,
+      "local_training": "advanced-only",
+      "status": "registered-not-default",
+      "notes": "Use only for heavy domain adaptation/continued pretraining, not ordinary Cybersand chat/tool work."
+    }
+  }
+}

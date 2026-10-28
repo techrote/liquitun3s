@@ -1,0 +1,23 @@
+{
+  "model": "vl",
+  "revision": "f83d2b0a2296aaa277f394990a9b8b949ddf9691",
+  "dataset": "../data/cybersand/train.jsonl",
+  "output_dir": "../runs/vl-cybersand",
+  "seed": 20261028,
+  "epochs": 1,
+  "max_steps": null,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "gradient_accumulation_steps": 8,
+  "gradient_checkpointing": true,
+  "max_sequence_tokens": 2048,
+  "max_image_side": 768,
+  "enable_thinking": false,
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_scope": "language_projector"
+  }
+}

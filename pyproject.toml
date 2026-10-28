@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liquitun3s"
+version = "0.1.0"
+description = "Local Titan RTX training and evaluation harness for Liquid AI LFM3 models, focused on Cybersand."
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = [
+  "huggingface-hub>=1.0,<2",
+  "psutil>=7,<8",
+]
+
+[project.optional-dependencies]
+train = [
+  "accelerate>=1.10,<2",
+  "datasets>=3,<5",
+  "peft>=0.18,<1",
+  "pillow>=10,<13",
+  "safetensors>=0.6,<1",
+  "transformers>=5.21,<6",
+  "trl>=0.9",
+]
+qlora = [
+  "bitsandbytes>=0.48",
+]
+dev = [
+  "pytest>=8,<10",
+  "ruff>=0.9",
+]
+
+[project.scripts]
+liquitun3s = "liquitun3s.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+liquitun3s = ["model_registry.json"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]

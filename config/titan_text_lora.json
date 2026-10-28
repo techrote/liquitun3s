@@ -1,0 +1,20 @@
+{
+  "model": "text",
+  "revision": null,
+  "dataset": "../data/text/train.jsonl",
+  "output_dir": "../runs/text-cybersand",
+  "seed": 20261028,
+  "epochs": 1,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "gradient_accumulation_steps": 8,
+  "gradient_checkpointing": true,
+  "max_sequence_tokens": 2048,
+  "enable_thinking": false,
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05
+  }
+}
