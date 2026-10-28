@@ -1,0 +1,2 @@
+{"messages":[{"role":"system","content":"Return compact JSON only."},{"role":"user","content":"Cybersand actor output arrived after its observation lease expired. What should the adapter do?"},{"role":"assistant","content":"{\"action\":\"reject\",\"reason\":\"stale_observation\"}"}]}
+{"messages":[{"role":"system","content":"Return compact JSON only."},{"role":"user","content":"A visual policy cannot see cells hidden behind terrain. How should it report them?"},{"role":"assistant","content":"{\"hidden_state\":\"unknown\",\"invent\":false}"}]}

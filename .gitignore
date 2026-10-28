@@ -17,6 +17,9 @@ checkpoints/
 runs/
 outputs/
 data/private/
+data/cybersand/images/
+data/cybersand/videos/
+data/text/private/
 *.safetensors
 *.gguf
 *.bin
