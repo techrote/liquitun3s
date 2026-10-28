@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+
+# Models, caches, datasets and runs
+.cache/
+models/
+weights/
+checkpoints/
+runs/
+outputs/
+data/private/
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Local secrets
+.env
+*.local.json
